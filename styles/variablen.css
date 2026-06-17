@@ -1,0 +1,31 @@
+:root {
+    --primary-font-color: rgba(54, 53, 52, 1);
+    --secondary-font-color: rgba(253, 234, 220, 1);
+    --tertiary-font-color: rgba(255, 255, 255, 1);
+    --quaternary-font-color: rgba(231, 108, 31, 1);
+    --quinary-font-color: rgba(251, 251, 251, 1);
+    --primary-hero-title-font-color: rgba(231, 108, 31, 1);
+    --primary-banner-title-font-color: rgba(255, 255, 255, 1);
+    --primary-banner-bg-color: rgba(231, 108, 31, 1);
+    --primary-liked-area-bg-color: rgba(250, 202, 172, 1);
+    --primary-card-bg-color: rgba(253, 234, 220, 1);
+    --primary-basket-bg-color: rgba(54, 53, 52, 1);
+    --primary-dialog-bg-color: rgba(54, 53, 52, 1);
+    --primary-mobilenav-bg-color: rgba(54, 53, 52, 1);
+    --primary-mobilenav-counter-bg-color: rgba(253, 234, 220, 1);
+    --primary-border-color: rgba(255, 255, 255, 1);
+    --primary-card-button-bg-color: rgba(255, 255, 255, 1);
+    --primary-basket-button-color: rgba(231, 108, 31, 1);
+    --basket-quantity-button-bg-color: rgba(255, 255, 255, 1);
+    --scrollbar-primary-thumb-color: rgba(253, 234, 220, 1);
+    --primary-shadow-color: rgba(54, 53, 52, 1);
+    --secondary-shadow-color: rgba(253, 234, 220, 0.5);
+    --tertiary-shadow-color: rgba(54, 53, 52, 0.4);
+    --menu-content-width: 940px;
+    --basket-width: 440px;
+    --basket-height: 800px;
+    --basket-button-border-radius: 60px;
+    --z-index-0: 0;
+    --z-index-1: 1;
+    --z-index-999: 999;
+}
