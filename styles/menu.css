@@ -1,0 +1,176 @@
+.menu_section_content {
+    position: relative;
+    flex: 1 1 var(--menu-content-width);
+    max-width: var(--menu-content-width);
+    margin: 30px 0;
+}
+
+.menu_categories {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.banner {
+    position: relative;
+    height: 60px;
+    overflow: visible;
+}
+
+.banner_background {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0;
+    bottom: 0;
+    left: calc((100vw - 100%) / -2);
+    right: calc((100vw - 100%) / -2);
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 60px;
+    z-index: var(--z-index-0);
+    background-color: var(--primary-banner-bg-color);
+}
+
+.banner_content {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    max-width: var(--menu-content-width);
+    margin: 0 auto;
+    padding-left: 150px;
+    z-index: var(--z-index-1);
+    gap: 15px;
+}
+
+.banner_content img {
+    transform: translateY(-30px);
+}
+
+.menu_category {
+    display: flex;
+    justify-content: flex-start;
+    max-width: var(--menu-content-width);
+    margin-top: 30px;
+    padding-left: 80px;
+}
+
+.cards_category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.menu_card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 720px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--primary-card-bg-color);
+    gap: 16px;
+}
+
+.menu_card_image_container {
+    display: flex;
+    flex: 1 0 210px;
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.menu_card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu_card_infos {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 470px;
+    gap: 12px;
+}
+
+.menu_card_name_ingredients {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 8px;
+}
+
+.menu_card_price_addbutton {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: end;
+    flex: 1;
+}
+
+@media (max-width: 1028px) {
+    .menu_section_content {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .menu_category {
+        justify-content: center;
+        padding: 0 40px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner_content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+        bottom: 55px;
+    }
+
+    .banner_content img {
+        height: 60px;
+        transform: translateY(10px);
+    }
+
+    .menu_card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu_card_image_container {
+        flex: unset;
+        height: 80px;
+    }
+
+    .menu_card_infos {
+        flex-direction: column;
+        flex: unset;
+    }
+
+    .menu_card_name_ingredients {
+        flex: unset;
+        max-width: 700px;
+        height: fit-content;
+    }
+
+    .menu_card_price_addbutton {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu_category {
+        padding: 0 10px;
+    }
+
+    .banner_content span {
+        display: none;
+    }
+}

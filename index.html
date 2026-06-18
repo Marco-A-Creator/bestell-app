@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./styles/assets.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/font.css">
     <link rel="stylesheet" href="./styles/variablen.css">
     <link rel="stylesheet" href="./style.css">
 
@@ -25,8 +25,117 @@
 
 </head>
 
-<body>
+<body onload="openApp()">
+    <header>
+        <nav class="navbar">
+            <div class="navbar_content">
+                <a aria-label="Startseite öffnen" href="index.html"><img src="./assets/icons/icon_standard_logo.webp"
+                        alt="Bestell-App Logo"></a>
+                <img src="./assets/icons/icon_burger_menu.webp" alt="Burger-Menu Platzhalter">
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero_section">
+            <div class="hero">
+                <div class="hero_image">
+                    <img src="./assets/images/hero_background.webp" alt="Hintergrundbild">
+                </div>
+                <div class="overlay_logo">
+                    <img src="./assets/icons/icon_overlay_hero.webp" alt="Burger Logo">
+                </div>
+            </div>
+            <div class="title_section">
+                <div class="title">
+                    <h1><span class="title_orange">Burger</span>House</h1>
+                    <div class="liked">
+                        <img src="./assets/icons/icon_star.webp" alt="Stern-Icon für likes">
+                        <p class="average">4,1</p>
+                        <p class="counter">(317)</p>
+                    </div>
+                </div>
+                <h2>The best of Burgers, Pizza and Greens, all in one place.</h2>
+            </div>
+        </section>
+
+        <section id="menuSection" class="menu_section">
+            <div id="menuSectionDishes" class="menu_section_content">
+
+            </div>
+
+            <div class="basket_line">
+                <div class="basket">
+                    <div id="basketContent" class="basket_content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <dialog id="mobileBasket" class="mobile-basket" onclick="closeDialog('mobileBasket')">
+            <div class="mobile_basket_frame" role="none" onclick="event.stopPropagation()">
+                <div class="mobile-basket-close">
+                    <button onclick="closeDialog('mobileBasket')" class="close"
+                        aria-label="Dialog schließen"><img src="./assets/icons/icon_close.webp"
+                            alt="Schließen Icon"></button>
+                </div>
+                <div id="mobileBasketContent" class="mobile-basket-content">
+
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="orderedDialog" class="dialog-ordered" onclick="closeDialog('orderedDialog')">
+            <div class="ordered-content" role="none" onclick="event.stopPropagation()">
+                <div class="ordered_close">
+                    <button onclick="closeDialog('orderedDialog')" class="close"
+                        aria-label="Dialog schließen"><img src="./assets/icons/icon_close.webp"
+                            alt="Schließen Icon"></button>
+                </div>
+                <div class="message">
+                    <img src="./assets/icons/icon_ordered.webp" alt="Bestellt Logo">
+                    <div class="message-bottom">
+                        <h5>Bestellt</h5>
+                        <h6>Dein Essen ist bald da!</h6>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <img src="./assets/icons/icon_copyright.webp" alt="Copyright">
+                <p>2025 BurgerHouse</p>
+            </div>
+            <ul class="footer-content-right">
+                <li>
+                    <a href="#">Impressum</a>
+                </li>
+                <li>
+                    <a href="#">Datenschutz</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <nav class="mobile_nav">
+        <button onclick="window.location.href='index.html'" class="mobile_buttons button_one"><img
+                src="./assets/icons/icon_home_white.webp" alt="Home Logo"></button>
+        <button class="mobile_buttons button_two"><img src="./assets/icons/icon_person_white.webp"
+                alt="Personen Logo"></button>
+        <button class="mobile_buttons button_three"><img src="./assets/icons/favicon.webp"
+                alt="Bestell-App Logo"></button>
+        <div>
+            <button onclick="openDialog('mobileBasket')" class="mobile_buttons button_four">
+                <img id="mobileCartImage" class="mobile_cart_image" src="./assets/icons/icon_shopping_cart_white.webp"
+                    alt="Einkaufswagen Logo">
+                <span id="mobileCartCounter" class="mobile_cart_counter hide_element"></span>
+            </button>
+        </div>
+    </nav>
 </body>
 
 </html>

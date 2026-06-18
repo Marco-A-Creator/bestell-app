@@ -1,0 +1,298 @@
+.basket_line {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 440px;
+    height: inherit;
+    margin: 30px 0;
+    margin-left: auto;
+    z-index: var(--z-index-1);
+}
+
+.basket {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    width: 440px;
+    height: 800px;
+    background-color: var(--primary-basket-bg-color);
+    border-radius: 30px 0 0 30px;
+}
+
+.basket_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 36px;
+}
+
+.basket_added_dishes {
+    display: flex;
+    flex-direction: column;
+    height: 355px;
+    gap: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.basket_added_dishes p {
+    color: var(--secondary-font-color);
+}
+
+.basket_added_dishes::-webkit-scrollbar {
+    width: 5px;
+}
+
+.basket_added_dishes::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 999px;
+}
+
+.basket_added_dishes::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-primary-thumb-color);
+    border-radius: 999px;
+}
+
+.basket_dish_card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 280px;
+    max-width: 340px;
+    padding: 20px;
+    gap: 8px;
+    border-radius: 20px;
+    background-color: var(--primary-card-bg-color);
+}
+
+.dish_card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.dish_card_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish_card_bottom_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.dish_card_bottom_left h6 {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.basket_calculator_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
+    gap: 32px;
+}
+
+.basket_calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+    gap: 10px;
+}
+
+.basket_summary {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+
+.basket_summary_content {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.basket_summary_content>p {
+    font-family: 'Palanquin';
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 1.25rem;
+    color: var(--tertiary-font-color);
+}
+
+.basket_seperator {
+    width: inherit;
+    border: 1px solid var(--primary-border-color);
+}
+
+.basket_total {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.basket_total>p {
+    font-family: 'Palanquin';
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 1.375rem;
+    color: var(--tertiary-font-color);
+}
+
+.empty_basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 80px;
+    color: var(--secondary-font-color);
+}
+
+.empty_basket_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 440px;
+    min-height: 600px;
+    max-height: 75dvh;
+    padding: 30px 0 10px 0;
+    margin: 0 auto;
+    background-color: var(--primary-basket-bg-color);
+    border: none;
+    border-radius: 30px 30px 0 0;
+    position: fixed;
+    top: auto;
+    bottom: 80px;
+    left: 50%;
+    z-index: var(--z-index-999);
+}
+
+.mobile_basket_frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(inherit -10px);
+}
+
+.mobile-basket-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.mobile_basket_added_dishes {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 355px;
+    gap: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.mobile_basket_dish_card {
+    padding: 16px;
+}
+
+.mobile_dish_card_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 280px;
+}
+
+.mobile_dish_card_bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+}
+
+.mobile_basket_calculator_section,
+.mobile_basket_calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    min-width: 300px;
+    padding: 0 5px;
+    gap: 16px;
+}
+
+.mobile_basket_calculator {
+    gap: 10px;
+}
+
+.mobile_basket_close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: calc(100% - 40px);
+}
+
+@media (min-width: 1029px) {
+    .mobile-basket {
+        display: none;
+    }
+}
+
+@media (max-width: 1028px) {
+    .basket_line {
+        display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .mobile-basket {
+        min-height: 560px;
+        max-height: 70dvh;
+        padding: 15px 0 5px 0;
+    }
+
+    .mobile-basket-content {
+        gap: 10px;
+    }
+
+    .mobile_basket_added_dishes {
+        max-height: 280px;
+    }
+}
+
+@media (max-height: 600px) {
+    .mobile-basket {
+        min-height: 480px;
+        max-height: 65dvh;
+        padding: 15px 0 5px 0;
+    }
+
+    .mobile-basket-content {
+        gap: 6px;
+    }
+
+    .mobile_basket_added_dishes {
+        max-height: 210px;
+    }
+}

@@ -1,0 +1,73 @@
+.mobile-basket:not([open]) {
+    transform: translate(-50%, 120%);
+    transition: transform 0.25s ease-in-out;
+}
+
+.mobile-basket[open] {
+    transform: translate(-50%, 0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.mobile-basket::backdrop,
+.dialog-ordered::backdrop {
+    backdrop-filter: saturate(90%) brightness(20%);
+}
+
+.dialog-ordered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    padding: 32px 32px 40px 32px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: var(--primary-dialog-bg-color);
+    overflow: hidden;
+    border: none;
+}
+
+.dialog-ordered:not([open]) {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}
+
+.dialog-ordered[open] {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+    pointer-events: auto;
+}
+
+.ordered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    gap: 20px;
+}
+
+.message {
+    gap: 20px;
+}
+
+.message,
+.message-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-bottom h6 {
+    font-size: 1.5rem;
+    color: var(--secondary-font-color);
+}
+
+.ordered_close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: inherit;
+    padding-right: 20px;
+}
