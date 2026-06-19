@@ -36,9 +36,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    footer {
+        height: 240px;
+    }
+
     .footer-content {
         max-width: 180px;
         gap: 10px;
+        padding-bottom: 80px;
     }
 
     .footer-content-right {

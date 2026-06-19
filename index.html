@@ -76,9 +76,8 @@
         <dialog id="mobileBasket" class="mobile-basket" onclick="closeDialog('mobileBasket')">
             <div class="mobile_basket_frame" role="none" onclick="event.stopPropagation()">
                 <div class="mobile-basket-close">
-                    <button onclick="closeDialog('mobileBasket')" class="close"
-                        aria-label="Dialog schließen"><img src="./assets/icons/icon_close.webp"
-                            alt="Schließen Icon"></button>
+                    <button onclick="closeDialog('mobileBasket')" class="close" aria-label="Dialog schließen"><img
+                            src="./assets/icons/icon_close.webp" alt="Schließen Icon"></button>
                 </div>
                 <div id="mobileBasketContent" class="mobile-basket-content">
 
@@ -89,9 +88,8 @@
         <dialog id="orderedDialog" class="dialog-ordered" onclick="closeDialog('orderedDialog')">
             <div class="ordered-content" role="none" onclick="event.stopPropagation()">
                 <div class="ordered_close">
-                    <button onclick="closeDialog('orderedDialog')" class="close"
-                        aria-label="Dialog schließen"><img src="./assets/icons/icon_close.webp"
-                            alt="Schließen Icon"></button>
+                    <button onclick="closeDialog('orderedDialog')" class="close" aria-label="Dialog schließen"><img
+                            src="./assets/icons/icon_close.webp" alt="Schließen Icon"></button>
                 </div>
                 <div class="message">
                     <img src="./assets/icons/icon_ordered.webp" alt="Bestellt Logo">
@@ -119,23 +117,22 @@
                 </li>
             </ul>
         </div>
+        <nav class="mobile_nav">
+            <button onclick="window.location.href='index.html'" class="mobile_buttons button_one"><img
+                    src="./assets/icons/icon_home_white.webp" alt="Home Logo"></button>
+            <button class="mobile_buttons button_two"><img src="./assets/icons/icon_person_white.webp"
+                    alt="Personen Logo"></button>
+            <button class="mobile_buttons button_three"><img src="./assets/icons/favicon.webp"
+                    alt="Bestell-App Logo"></button>
+            <div>
+                <button onclick="openDialog('mobileBasket')" class="mobile_buttons button_four">
+                    <img id="mobileCartImage" class="mobile_cart_image"
+                        src="./assets/icons/icon_shopping_cart_white.webp" alt="Einkaufswagen Logo">
+                    <span id="mobileCartCounter" class="mobile_cart_counter hide_element"></span>
+                </button>
+            </div>
+        </nav>
     </footer>
-
-    <nav class="mobile_nav">
-        <button onclick="window.location.href='index.html'" class="mobile_buttons button_one"><img
-                src="./assets/icons/icon_home_white.webp" alt="Home Logo"></button>
-        <button class="mobile_buttons button_two"><img src="./assets/icons/icon_person_white.webp"
-                alt="Personen Logo"></button>
-        <button class="mobile_buttons button_three"><img src="./assets/icons/favicon.webp"
-                alt="Bestell-App Logo"></button>
-        <div>
-            <button onclick="openDialog('mobileBasket')" class="mobile_buttons button_four">
-                <img id="mobileCartImage" class="mobile_cart_image" src="./assets/icons/icon_shopping_cart_white.webp"
-                    alt="Einkaufswagen Logo">
-                <span id="mobileCartCounter" class="mobile_cart_counter hide_element"></span>
-            </button>
-        </div>
-    </nav>
 </body>
 
 </html>
